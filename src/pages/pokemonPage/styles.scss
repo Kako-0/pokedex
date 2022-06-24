@@ -1,0 +1,42 @@
+@use '../../common/assets/scss/conf' as color;
+
+.pokemonPageMainContainer {
+    height: 100vh;
+    width: 100%;
+    padding: 3rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    
+    h1{
+        font-weight: 400;
+        line-height: 42px;
+        letter-spacing: 3px;
+    }
+
+    .searchInput {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        border: 1px solid #f1f1f1;
+        box-shadow: 4px 4px 16px rgba(1, 28, 64, 0.1);
+        border-radius: 40px;
+        padding: 1rem;
+
+
+        input,button{
+            border: none;
+        }
+        input{
+            width: 100%;
+        }
+
+        button{
+            background-color: color.$WHITE;
+            cursor: pointer;
+        }
+    }
+
+}
