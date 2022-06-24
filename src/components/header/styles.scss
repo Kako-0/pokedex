@@ -1,0 +1,35 @@
+@use '../../common/assets/scss/conf' as color;
+
+.HeaderContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 6rem;
+    box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
+    
+    >img{
+        cursor: pointer;
+    }
+    
+    .HeaderMenu{
+        display: flex;
+        justify-content: space-between;
+        gap: 6rem;
+        margin-right: 10rem;
+        list-style: none;
+        >li{
+            
+            :hover{
+                font-weight: 900;
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid #212121;
+            }
+        }
+        a{
+            font-size: 1.2em;
+            text-decoration: none;
+            color: color.$BLACK;
+        }
+    }
+}

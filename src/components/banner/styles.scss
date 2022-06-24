@@ -1,0 +1,37 @@
+@use '../../common/assets/scss/conf' as color;
+
+.BannerContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 85vh;
+    width: 100%;
+    padding: 4rem 0 0 4rem;
+
+    .BannerText{
+        color: color.$GRAY;
+        padding: 2rem;
+        >h1{
+            font-size: 3em;
+            font-weight: 800;
+        }
+        >p{
+            padding-right: 8rem;
+            margin-right: 6rem;
+            margin-top: 1rem;
+            letter-spacing: 0.2em;
+        }
+
+        .BannerBtn{
+            margin-top: 2rem;
+            border: none;
+            padding: 1rem;
+            font-size: 1.5em;
+            color: color.$WHITE;
+            font-weight: 700;
+            background-color: color.$GREEN;
+            border-radius: 10px;
+            box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.18);
+            cursor: pointer;
+        }
+    }
+}
